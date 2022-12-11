@@ -5,10 +5,11 @@
 }
 
 body {
- 
-  background: #D6E4E5;
+  background: #d6e4e5;
+  display: flex;
 
   .container {
+    display: flex;
     // border: 1px solid black;
     height: 450px;
     width: 600px;
@@ -136,4 +137,23 @@ body {
       }
     }
   }
+
+    @media screen and (max-width: 640px) {
+        .container {
+        transform: translate(-40%, -40%);
+        }   
+    }
+    @media screen and (max-width: 902px) {
+        .container {
+        transform: translate(-50%, -50%);
+        }   
+    }
+    
+    @media screen and (max-width: 440px) {
+        .container {
+        transform: translate(-28%, -3%);
+        }
+    }
 }
+
+

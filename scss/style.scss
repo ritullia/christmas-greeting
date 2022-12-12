@@ -112,8 +112,6 @@ body {
           font-family: "Dancing Script", cursive;
         }
       }
-
-     
     }
 
     .card:hover {
@@ -122,30 +120,33 @@ body {
         transform: scale(1.5);
       }
 
-      
-
       img {
         opacity: 0.4;
       }
     }
   }
 
-    @media screen and (max-width: 640px) {
-        .container {
-        transform: translate(-40%, -40%);
-        }   
+  
+  @media only screen and (min-width: 600px)  {
+    .container {
+      transform: translate(-40%, -40%);
+  
     }
-    @media screen and (max-width: 902px) {
-        .container {
-        transform: translate(-50%, -50%);
-        }   
-    }
-    
-    @media screen and (max-width: 440px) {
-        .container {
-        transform: translate(-28%, -3%);
-        }
-    }
-}
+    .card {
+      .text-container {
+        display: inline-block;
+      }
 
+      img {
+        opacity: 0.8;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 902px) {
+    .container {
+      transform: translate(-50%, -50%);
+    }
+  }
+}
 
